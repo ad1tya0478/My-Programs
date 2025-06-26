@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Max Page</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        button {
+            font-style: italic;
+            border: 1px;
+            border-color: black;
+            background-color: black;
+            color: white;
+            margin-top: 30px;
+            cursor: pointer;
+            border-radius: 6px;
+            padding: 5px;
+            transition: background-color 0.15s,
+            color 0.15s;
+            font-weight: 500;
+            font-size: 15px;
+        }
+        .home {
+            margin-left: 260px;
+            margin-right: 150px;
+        }
+        .home:hover{
+            background-color: #b9bdc6;
+            color: black;
+        }
+        .collection{
+            margin-right: 150px;
+        }
+        .collection:hover {
+            background-color: #b9bdc6;
+            color: black;
+        }
+        .about {
+            margin-right: 150px;
+        }
+        .about:hover{
+            background-color: #b9bdc6;
+            color: black;
+        }
+        .contact:hover {
+            background-color: #b9bdc6;
+            color: black;
+        }
+        .left-bar {
+            position: fixed; 
+            left: 0;
+            top: 0;
+            height: 100vh;
+            width: 70px;
+            background-color: #b9bdc6; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .left-bar span {
+            writing-mode: vertical-rl; 
+            transform: rotate(180deg); 
+            font-family: sans-serif;
+            font-weight: bold;
+            letter-spacing: 8px;
+            font-size: 12px;
+            color: #2c2c2c;
+            text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.3);
+        }
+        .nikemax {
+            margin-left: 100px;
+            margin-top: 100px;
+            color: white;
+        }
+        .nikemax h1 {
+            font-size: 100px;
+            font-family: Arial;
+            font-weight: 900;
+            font-style: italic;
+            margin-bottom: 0% 0;
+        }
+        .nikemax p {
+            font-size: 45px;
+            font-family: Arial;
+            font-weight: 500;
+            font-style: italic;
+            margin-top: -65px;
+        }
+        .bottom-gradient {
+            background: #000000;
+        background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(120, 120, 120, 1) 50%, rgba(158, 158, 158, 1) 100%);
+        }
+
+    </style>
+</head>
+<body>
+    <button class="home">HOME</button>
+    <button class="collection">COLLECTION</button>
+    <button class="about">ABOUT</button>
+    <button class="contact">CONTACT</button>
+
+    <div class="left-bar">
+        <span>STYLE TAKES OVER</span> 
+    </div>
+
+    <div class="bottom-gradient"></div>
+
+    <div class="nikemax">
+        <h1>AIR MAX</h1>
+        <p>NIKE AIR MAX 90</p>
+    </div>
+    
+</body>
+</html>
