@@ -173,14 +173,55 @@
 // ArrayName(users);
 // console.log(arrName);
 
-let nums = 1534236469;
-let rev = 0;
-var reverse = function(x) {
-    let num = x;
-    while(num!=0){
-        rev = rev * 10 + (num%10);
-        num = num/10 | 0;
-    }
-};
-reverse(nums);
-console.log(rev);
+// let nums = 1534236469;
+// let rev = 0;
+// var reverse = function(x) {
+//     let num = x;
+//     while(num!=0){
+//         rev = rev * 10 + (num%10);
+//         num = num/10 | 0;
+//     }
+// };
+// reverse(nums);
+// console.log(rev);
+
+// const names = ["Walt", "Jesse", "Saul"];
+// const doubled = names.map((num) => "Mr." + num);
+// console.log(doubled);
+
+
+// const nums = [5,7,56,78,23,10];
+// const greater = nums.filter((num) => num >= 10);
+// console.log(greater);
+
+// const bills = [100,250,50,600];
+// const total = bills.reduce((acc, val) => acc + val);
+// console.log(total);
+
+// const words = ["cook","meth","blue","heisenberg"];
+// let uppercase = words.filter(word => word.length > 4)
+// .map(word => word.toUpperCase());
+// console.log(uppercase);
+
+// const fruits = ["apple", "banana","cherry"];
+// const number = fruits.map((num, index) => index +":" + num );
+// console.log(number);
+
+// const users = [
+//     {name: "walt", isActive: true},
+//     {name: "jesse", isActive: false},
+//     {name: "skyler", isActive: true},
+// ];
+// const active = users.filter((users) => {
+//     if (users.isActive) {
+//         return users.name;
+//     }
+// });
+// console.log(active);
+
+const words = ["blue", "meth","blue", "cook", "blue"];
+const rep = words.reduce((acc, val) => {
+    acc[val] = (acc[val] || 0) + 1;
+    return acc;
+}, {} );
+console.log(rep);
