@@ -242,4 +242,28 @@
 //     }
 // };
 
+// const prices = [100, 200, 300];
+// const tax = prices.map((num) =>  num + (num * 0.18) );
+// console.log(tax);
+
+
+// const strings = ["cook", "meth", "", "blue",""];
+// const out = strings.filter((num) => num !== "");
+// console.log(out);
+
+// const nums = [5, 12, 8, 130, 44];
+// const W = nums.reduce((acc, curr) => {
+//     return acc > curr ? acc : curr ;
+// });
+// console.log(W);
+
+// const people = [
+//     {name: "walt", age: 50},
+//     {name: "jesse", age: 25},
+//     {name: "mike", age: 60}
+// ]
+// const ret = people 
+//      .filter(person => person.age > 40)
+//      .map(person => person.name + " is " + person.age);
+// console.log(ret);
 
