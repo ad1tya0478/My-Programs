@@ -219,9 +219,27 @@
 // });
 // console.log(active);
 
-const words = ["blue", "meth","blue", "cook", "blue"];
-const rep = words.reduce((acc, val) => {
-    acc[val] = (acc[val] || 0) + 1;
-    return acc;
-}, {} );
-console.log(rep);
+// const words = ["blue", "meth","blue", "cook", "blue"];
+// const rep = words.reduce((acc, val) => {
+//     acc[val] = (acc[val] || 0) + 1;
+//     return acc;
+// }, {} );
+// console.log(rep);
+
+// Conatiner With most water problem 
+// var maxArea = function(height) {
+//     let maxWater = 0;
+//     let lp = 0, rp =  height.length-1;
+
+//     while(lp < rp ){
+//         let width = rp - lp ;
+//         let ht = Math.min(height[lp], height[rp]);
+//         let curtWater = width * ht;
+
+//         maxWater = Math.max(maxWater, curtWater);
+
+//         height[lp] < height[rp] ? lp++ : rp--;
+//     }
+// };
+
+
