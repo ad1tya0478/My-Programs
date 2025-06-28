@@ -267,3 +267,74 @@
 //      .map(person => person.name + " is " + person.age);
 // console.log(ret);
 
+
+// let string = "III";
+// function roman(s) {
+//     let numb = 0;
+//     for(let i =0; i < s.length;i++){        
+//         if (s[i] == "I"){ 
+//             if (s[i + 1] == "V"){
+//                 numb += 4;
+//                 i++;
+//             } else if (s[i + 1] == "X") {
+//                 numb += 9;
+//                 i++;
+//             } else {
+//                 numb += 1;
+//             }
+//         }
+//         else if (s[i] == "V") {
+//             numb += 5;
+//         }
+//         else if (s[i] == "X"){
+//             if (s[i + 1] == "L"){
+//                 numb += 40;
+//                 i++;
+//             } else if (s[i + 1] == "C"){
+//                 numb += 90;
+//                 i++;
+//             } else {
+//                 numb+= 10;
+//             }
+//         }
+//         else if (s[i] == "L") {
+//             numb += 50;
+//         }
+//         else if (s[i] == "C") {
+//             if (s[i + 1] == "D"){
+//                 numb += 400;
+//                 i++;
+//             } else if (s[i + 1] == "M"){
+//                 numb += 900;
+//                 i++;
+//             } else {
+//                 numb += 100;
+//             }
+//         }
+//         else if (s[i] == "D") {
+//             numb += 500;
+//         }
+//         else if (s[i] == "M") {
+//             numb += 1000;
+//         }
+//     }
+//     return numb;
+// }
+// roman(string);
+// console.log(numb);
+
+
+// const arr = [1, 2, 3, 4];
+// let  newArr = [];
+// var filter = function(arr, fn) {
+//     for(let i = 0; i<arr.length;i++){
+//         if (fn(arr[i], i)){
+//             newArr.push(arr[i]);
+//         }
+//     }
+//     return newArr;
+// }
+// console.log(newArr);
+
+
+
