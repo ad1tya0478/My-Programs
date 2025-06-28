@@ -5,50 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Air Max Page</title>
     <style>
+
+        
+
+
         body {
-            background-color: black;
+        margin: 0;
+        background: #000; 
+        color: #fff;
+        font-family: 'Helvetica', sans-serif;
         }
-        button {
-            font-style: italic;
-            border: 1px;
-            border-color: black;
-            background-color: black;
-            color: white;
-            margin-top: 30px;
-            cursor: pointer;
-            border-radius: 6px;
-            padding: 5px;
-            transition: background-color 0.15s,
-            color 0.15s;
-            font-weight: 500;
-            font-size: 15px;
+
+        .navbar {
+        display: flex;
+        justify-content: center;
+        padding: 2rem 0;
+        background: transparent;
         }
-        .home {
-            margin-left: 260px;
-            margin-right: 150px;
+
+        .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 15rem;
         }
-        .home:hover{
-            background-color: #b9bdc6;
-            color: black;
+
+        .nav-links a {
+        text-decoration: none;
+        color: white;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        font-style: italic;
+        transition: 0.3s ease;
         }
-        .collection{
-            margin-right: 150px;
+
+        .nav-links a:hover {
+        color: #999; 
         }
-        .collection:hover {
-            background-color: #b9bdc6;
-            color: black;
-        }
-        .about {
-            margin-right: 150px;
-        }
-        .about:hover{
-            background-color: #b9bdc6;
-            color: black;
-        }
-        .contact:hover {
-            background-color: #b9bdc6;
-            color: black;
-        }
+
+        
+        
         .left-bar {
             position: fixed; 
             left: 0;
@@ -73,35 +68,59 @@
         }
         .nikemax {
             margin-left: 100px;
-            margin-top: 100px;
+            margin-top: -30px;
             color: white;
         }
         .nikemax h1 {
-            font-size: 100px;
-            font-family: Arial;
+            font-size: 165px;
+            font-family: Arial, Helvetica, sans-serif;
             font-weight: 900;
             font-style: italic;
             margin-bottom: 0% 0;
         }
-        .nikemax p {
-            font-size: 45px;
+        .nikemax h2 {
+            font-size: 70px;
             font-family: Arial;
             font-weight: 500;
             font-style: italic;
-            margin-top: -65px;
+            margin-top: -105px;
+        }
+        .nikemax h3 {
+            font-size: 60px;
+            font-weight: 500;
+            font-style: italic;
+            margin-bottom: 0;
+        }
+        .nikemax p {
+            color: #b8c0d1;
+            width: 450px;
+            font-family: Arial;
+            font-style: italic;
+            font-weight: 500;
+            line-height: 1.8;
         }
         .bottom-gradient {
-            background: #000000;
-        background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(120, 120, 120, 1) 50%, rgba(158, 158, 158, 1) 100%);
-        }
+            position: fixed; 
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 90px; 
+            background: linear-gradient(to bottom, transparent, #606060);
+            pointer-events: none; 
+            z-index: 10;
+            }
 
     </style>
 </head>
 <body>
-    <button class="home">HOME</button>
-    <button class="collection">COLLECTION</button>
-    <button class="about">ABOUT</button>
-    <button class="contact">CONTACT</button>
+    <nav class="navbar">
+    <ul class="nav-links">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">COLLECTION</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">CONTACT</a></li>
+    </ul>
+    </nav>
 
     <div class="left-bar">
         <span>STYLE TAKES OVER</span> 
@@ -113,7 +132,12 @@
         <h1>
             AIR MAX
         </h1>
-        <p>NIKE AIR MAX 90</p>
+        <h2>NIKE AIR MAX 90</h2>
+
+        <h3 class="price"> $ 85</h3>
+
+        <p>Air Max sport shoes are designed for those who never stop moving. With lightweight comfort, strong grip, and a stylish look, they’re perfect for running, training, or daily wear. 
+            Feel the energy in every step!</p>
     </div>
     
 </body>
