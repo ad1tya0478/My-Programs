@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Grid</title>
 </head>
-<body>
+<body style="padding-bottom: 1000px;">
     <div style="
         display: grid;
         grid-template-columns: 100px 100px;
@@ -71,7 +71,7 @@
     <div style="
         margin-top: 30px;
         display: grid;
-        grid-template-columns: 100px 1fr 1fr ;
+        grid-template-columns: 100px 1fr 2fr ;
         ">
         <div style="background-color: aqua;">
             div  1
@@ -80,6 +80,34 @@
             1 fr 
         </div>
         <div style="background-color: lightgreen;">
+             2 fr 
+        </div>
+    </div>
+
+
+    <div style="
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        column-gap: 20px;
+        row-gap: 40px;
+        ">
+        <div style="background-color: aqua; height: 200px;">
+            1 fr
+        </div>
+        <div style="background-color: lightpink; height: 200px;">
+            1 fr 
+        </div>
+        <div style="background-color: lightgreen; height: 200px;">
+             1 fr 
+        </div>
+        <div style="background-color: aqua; height: 200px;">
+            1 fr
+        </div>
+        <div style="background-color: lightpink; height: 200px;">
+            1 fr 
+        </div>
+        <div style="background-color: lightgreen; height: 200px;">
              1 fr 
         </div>
     </div>
