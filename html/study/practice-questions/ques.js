@@ -337,4 +337,20 @@
 // console.log(newArr);
 
 
+// const digits = [1, 2, 3];
+// var plusone = function (digits) {
+//     for(let i = digits.length - 1;i >= 0;i--){
+//         if(digits[i] < 9){
+//             digits[i]++;
+//             return digits;
+//         } else {
+//         digits[i] = 0;
+//         }
+//     }
+//     digits.unshift(1);
+//     return digits;
+// }
+// console.log(plusone(digits));
+
+
 
