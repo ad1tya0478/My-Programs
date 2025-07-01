@@ -352,10 +352,25 @@
 // }
 // console.log(plusone(digits));
 
-var reduce = function(nums, fn, init) {
-    let val = init ;
-    for(let i =0; i<nums.length;i++){
-        val = fn(val, nums[i])
+// var reduce = function(nums, fn, init) {
+//     let val = init ;
+//     for(let i =0; i<nums.length;i++){
+//         val = fn(val, nums[i])
+//     }
+//     return val;
+// };
+
+
+
+var possibleStringCount = function(word) {
+    const count = new Set();
+    count.add(word);
+
+    for(let i = 1;i<word.length;i++){
+        if (word[i] == word[i -1] ){
+            let fixed = word.slice(0,1) + word.slice(i+1);
+            count.add(fixed);
+        }
     }
-    return val;
+    return count.size;
 };
