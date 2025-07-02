@@ -7,13 +7,37 @@ public class ifelse {
         // else 
         // System.out.println("Bye");
 
-        int x = 8;
-        int y = 7;
-        if (x>y) {
-            System.out.println(x);
-            System.out.println("Thank you");
-        } else {
-            System.out.println(y);
-        }
+        // int x = 8;
+        // int y = 7;
+        // if (x>y) {
+        //     System.out.println(x);
+        //     System.out.println("Thank you");
+        // } else {
+        //     System.out.println(y);
+        // }
+
+
+        // int x = 8;
+        // int y = 7;
+        // int z = 9;
+        // if(x > y && x > z)
+        //     System.out.println(x);
+        // else if (y > x && y > z)
+        //     System.out.println(y);
+        // else 
+        //     System.out.println(z);
+
+        //// Ternary Operator 
+        int x = 6;
+        int result = 0;
+        // if(x%2==0) 
+        //     result = 10;
+        // else 
+        //    result = 20;
+
+        // ?:
+
+        result = x%2==0? 10 : 20;
+        System.out.println(result);
     }
 }
