@@ -1,3 +1,4 @@
+package files;
 public class Variables {
     public static void main(String a[]) {
         // int num1 = 9;
