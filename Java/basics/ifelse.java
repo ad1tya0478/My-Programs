@@ -28,8 +28,8 @@ public class ifelse {
         //     System.out.println(z);
 
         //// Ternary Operator 
-        int x = 6;
-        int result = 0;
+        // int x = 6;
+        // int result = 0;
         // if(x%2==0) 
         //     result = 10;
         // else 
@@ -37,7 +37,40 @@ public class ifelse {
 
         // ?:
 
-        result = x%2==0? 10 : 20;
-        System.out.println(result);
+        // result = x%2==0? 10 : 20;
+        // System.out.println(result);
+
+
+        ///////// LOOPS ///////
+        
+
+        /// FOR 
+        for(int i = 0; i<4;i++){
+        System.out.println(" DAY " + i);
+
+        // for(int j = 1;j<=9;j++){
+        //     System.out.println("  " + (j+8) + " - " + (j+9));
+        // }
+
+        }
+
+
+        /// WHILE 
+    //     int i = 11;
+    //     while(i<=10){
+    //     System.out.println("Hi " + i);
+    //     i++;
+    // }
+    //     System.out.println("bye " + i);
+
+    
+    ///// DO WHILE
+        // int i = 5;
+        //     do{
+        //         System.out.println("hi " + i);
+        //         i++;
+        //     } while(i<=4);
+
+
     }
 }
