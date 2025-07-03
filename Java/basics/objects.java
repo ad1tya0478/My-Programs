@@ -80,4 +80,58 @@
 //     }
 // }
 
+// Q.4 
+// class Dog {
+//     String name;
+    
+//     void kutta() {
+//         System.out.println(name + " says: woof");
+//     }
+// }
+// public class objects {
+//     public static void main(String[] args) {
+//         Dog dog1 = new Dog();
+//         dog1.name = "Ghost";
+        
+//         Dog dog2 = new Dog();
+//         dog2.name = "Pillu";
+        
+//         dog1.kutta();
+//         dog2.kutta();
+//     }
+// }
+
+
+// Q.5 
+// class Rectangle {
+//     int length;
+//     int width;
+//         public int area(){
+//             int a = length * width;
+//             System.out.println(a + " is the area for this");
+//             return 0;
+//         }
+// }
+// public class objects {
+//     public static void main(String[] args) {
+//         Rectangle rec1 = new Rectangle();
+//         rec1.length = 10;
+//         rec1.width = 20;
+        
+//         Rectangle rec2 = new Rectangle();
+//         rec2.length = 20;
+//         rec2.width = 40;
+        
+//         Rectangle rec3 = new Rectangle();
+//         rec3.length = 5;
+//         rec3.width = 10;
+        
+//         rec1.area();
+//         rec2.area();
+//         rec3.area();
+//     }
+// }
+
+
+
 
