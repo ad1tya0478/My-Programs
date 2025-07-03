@@ -377,11 +377,35 @@
 
 
 
-var objisempty = function(obj){
-    if(Object.keys(obj) === 0){
-        return true;
+// var objisempty = function(obj){
+//     if(Object.keys(obj) === 0){
+//         return true;
+//     }
+//     else {
+//         return false;
+//     }
+// }
+
+
+var map = function(arr, fn) {
+    let arr2 = [];
+    for(let i = 0;i<arr.length;i++){
+        arr2.push(fn(arr[i], i));
     }
-    else {
-        return false;
-    }
-}
+    return arr2;
+};
+
+
+var once = function(fn) {
+    let called = false;
+    let result;
+    return function(...args){
+        if(!called){
+            called = true;
+            result = fn(...args);
+            return result;
+        }
+    return undefined;
+    };
+};
+
