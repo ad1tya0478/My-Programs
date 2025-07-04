@@ -133,5 +133,66 @@
 // }
 
 
+//////// Methods /////
 
+// class computer {
+//     public void playmusic(){
+//         System.out.println("Music playing");
+//     }
+//     public String getmeapen(int cost){
+//         if(cost >= 10 ){
+//         return "pen";
+//         } else 
+//             return "Nothing";
+//     }
+// }
+// public class objects {
+//     public static void main(String a[]){
+//         computer com = new computer();
+//         com.playmusic();
+//         String str = com.getmeapen(5);
+//         System.out.println(str);
+//     }
+// }
+
+
+/////////// Method overloading /////////
+// class Calculator {
+//     public int add(int n1, int n2){
+//         return n1 + n2;
+//     }
+//     public int add(int n1, int n2, int n3){
+//         return n1 + n2 + n3;
+//     }
+// }
+// public class objects {
+//     public static void main(String a[]){
+//         Calculator cal = new Calculator();
+//         int num = cal.add(10,10);
+//         System.out.println("addition in add = " + num);
+
+//         // int num1 = cal.add1(10,10,10);
+//         // System.out.println("Adittion in add1 = " + num1);
+//     }
+// }
+
+
+/////// Stack and heap memory ///// 
+
+class Calculator {
+
+    int num;   /// Stored in heap  
+
+    public int add(int n1, int n2){
+        int a = n1 + n2; // Stored in Stack 
+        return a;
+    }
+}
+public class objects {
+    public static void main(String a[]){
+        Calculator cal = new Calculator(); // Object create with new lies in heap
+        int num = cal.add(10,10);
+        System.out.println("addition in add = " + num);
+    }
+}
 
