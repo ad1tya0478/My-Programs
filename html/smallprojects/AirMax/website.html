@@ -36,11 +36,13 @@
         font-size: 1rem;
         letter-spacing: 1px;
         font-style: italic;
-        transition: 0.3s ease;
+        transition: color 0.2s, transform 0.2s, box-shadow 0.2s;
         }
 
         .nav-links a:hover {
         color: #999; 
+        transform: scale(1.1);
+        box-shadow: #b8c0d1;
         }
 
         
@@ -114,19 +116,24 @@
         .button-add {
             margin-left: 50px;
             margin-top: 30px;
-            padding: 20px;
-            font-size: 25px;
+            padding: 25px;
+            font-size: 20px;
             border-radius: 40px;
-            font-family: Arial;
-            font-weight: 500;
+            font-family:  "Helvetica Now Text", Helvetica, Arial, sans-serif;
+            font-weight: bold;
             font-style: italic;
             border: none;
             cursor: pointer;
-            transition: 0.3s;
+            transition: background-color 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s ;
         }
-        .button-add:hover{
-            background-color: #b9bdc6;
-        }
+        .button-add:hover {
+        background-color: black;
+        color: white;
+        box-shadow: 
+            0 0 20px rgba(169, 164, 164, 0.632);
+        transform: scale(1.1);
+}
+
 
     </style>
 </head>
@@ -146,6 +153,8 @@
 
     <div class="bottom-gradient"></div>
 
+    
+
     <div class="nikemax">
         <h1>
             AIR MAX
@@ -163,7 +172,7 @@
             Feel the energy in every step!
         </p>
 
-            <button class="button-add">ADD TO CART</button>
+            <button class="button-add">Add to cart</button>
     </div>
     
 </body>
