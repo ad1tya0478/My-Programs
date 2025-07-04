@@ -33,8 +33,36 @@ public class array {
 
 
         // Q.3 
-        
+        // int num[] = {2,3,4,5,6,7};
+        // boolean sort = true;
+
+        // for(int i = 0;i<num.length - 1;i++){
+        //     if(num[i] > num[i + 1]){
+        //         sort = false;
+        //         break;
+        //     }
+        // }
+        // if(sort)
+        //     System.out.println("Array sorted");
+        // else 
+        //     System.out.println("Array is not sorted");
+
+        // Q.4
+        // int num[] = {2,4,5,6,77,8};
+        // int max = Integer.MIN_VALUE;
+        // int secmax = Integer.MIN_VALUE;
+
+        // for(int i = 0;i<num.length;i++){
+        //     if(num[i] > max){
+        //         secmax = max;
+        //         max = num[i];
+        //     } else if (num[i] > secmax && num[i] != max ){
+        //         secmax = num[i];
+        //     }
+        // }
+        // System.out.println("Second largest: " + secmax);
 
         
+
     }
 }
