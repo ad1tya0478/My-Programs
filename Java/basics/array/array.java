@@ -65,7 +65,16 @@ public class array {
 
         ////// Multidimensional Array /////
         
-        int num[][] = {{1,2,3,4,5}, {6,7,8,9,0}};
-        System.out.println(num[0][4]);
+        // int num[][] = {{1,2,3,4,5}, {6,7,8,9,0}};
+        // System.out.println(num[0][4]);
+
+        int num[][] = new int[3][4];
+        int random  = (int)Math.random() * 100;
+        for(int i = 0; i < 3;i++){
+            for(int j = 0; j< 4;j++){
+                System.out.print(num[i][j] + " ");
+            }
+            System.out.println();
+        }
     }
 }
