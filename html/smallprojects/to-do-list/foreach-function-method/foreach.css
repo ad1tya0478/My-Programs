@@ -28,10 +28,11 @@ body {
     background-color: #191337;
     border-radius: 10px;
     border-style: dotted;
+    color: #cfcfcf;
 }
 
 .name-input:hover{
-    box-shadow: 0 0 10px 2px rgb(174, 149, 149);
+    box-shadow: 0 0 10px 2px #0f0f1a;
     transform: scale(1.05);
 }
 
@@ -64,7 +65,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 100px;
+    padding: 60px 100px 40px 100px;
     background-color:#2a2a40;
     gap: 20px;
     border-radius: 20px;
@@ -91,6 +92,7 @@ body {
 .name-input::placeholder {
     color: #cfcfcf;
     font-style: italic;
+    font-weight: bold;
 }
 .due-date-input{
     font-size: 15px;
@@ -100,6 +102,13 @@ body {
     border-style: dotted;
     color: #cfcfcf;
     font-style: italic;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+.due-date-input:hover{
+    box-shadow: 0 0 10px 2px #00ffcc;
+    transform: scale(1.05);
 }
 
 .add-todo-button {

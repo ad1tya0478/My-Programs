@@ -31,6 +31,12 @@ function rendertodolist() {
             rendertodolist();
             });
         });
+
+
+    if (todolist.length === 0) {
+    document.querySelector('.enter-tasks').textContent = 'Enter your tasks...!';
+    }
+
 }
 
 document.querySelector('.js-add-todo-button')
@@ -56,6 +62,8 @@ function addtodo() {
     }
     );
     console.log(todolist);
+
+    document.querySelector('.enter-tasks').textContent = 'Your Tasks.!';
 
     inputelement.value = '';
 
