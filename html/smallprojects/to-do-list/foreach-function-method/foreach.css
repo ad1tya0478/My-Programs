@@ -1,6 +1,6 @@
 body {
     font-family: Arial;
-    
+    background-color: Blue (#106EBE), mint (#0FFCBE);
 }
 
 .todo-grid,
@@ -37,4 +37,11 @@ body {
     cursor: pointer;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+.elements{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 230px;
 }
