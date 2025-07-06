@@ -387,51 +387,57 @@
 // }
 
 
-var map = function(arr, fn) {
-    let arr2 = [];
-    for(let i = 0;i<arr.length;i++){
-        arr2.push(fn(arr[i], i));
-    }
-    return arr2;
-};
+// var map = function(arr, fn) {
+//     let arr2 = [];
+//     for(let i = 0;i<arr.length;i++){
+//         arr2.push(fn(arr[i], i));
+//     }
+//     return arr2;
+// };
 
 
-var once = function(fn) {
-    let called = false;
-    let result;
-    return function(...args){
-        if(!called){
-            called = true;
-            result = fn(...args);
-            return result;
-        }
-    return undefined;
-    };
-};
+// var once = function(fn) {
+//     let called = false;
+//     let result;
+//     return function(...args){
+//         if(!called){
+//             called = true;
+//             result = fn(...args);
+//             return result;
+//         }
+//     return undefined;
+//     };
+// };
 
 
-var createCounter = function(init) {
-    let current = init;
+// var createCounter = function(init) {
+//     let current = init;
 
-    return {
-        increment: () => ++current,
-        decrement: () => --current,
-        reset: () => current = init
-    }
-};
+//     return {
+//         increment: () => ++current,
+//         decrement: () => --current,
+//         reset: () => current = init
+//     }
+// };
 
 
+// var findLucky = function(arr) {
+//     const freq = {};
+//     for (let num of arr) {
+//         freq[num] = (freq[num] || 0) + 1;
+//     }
+//     let maxLucky = -1;
+//     for (let num in freq) {
+//         if (parseInt(num) === freq[num]) {
+//             maxLucky = Math.max(maxLucky, parseInt(num));
+//         }
+//     }
+//     return maxLucky;
+// };
 
-var findLucky = function(arr) {
-    const freq = {};
-    for (let num of arr) {
-        freq[num] = (freq[num] || 0) + 1;
-    }
-    let maxLucky = -1;
-    for (let num in freq) {
-        if (parseInt(num) === freq[num]) {
-            maxLucky = Math.max(maxLucky, parseInt(num));
-        }
-    }
-    return maxLucky;
-};
+
+async function sleep(millis) {
+    return new Promise(function(resolve)  {
+        setTimeout(resolve, millis);
+    });
+}
