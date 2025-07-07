@@ -77,6 +77,32 @@ public class array {
         //     System.out.println();
         // }
 
+        //// Giving random values in the array /////
+        // int nums[][] = new int[3][4];
+        
+
+        // for(int i = 0; i < 3;i++){
+        //     for(int j = 0; j < 4; j++){
+        //         nums[i][j] = (int)(Math.random() * 10);
+        //     }
+        // }
+
+
+        // for(int i = 0; i < 3;i++){
+        //     for(int j = 0; j < 4; j++){
+        //         System.out.print(nums[i][j] + " ");
+        //     }
+        //     System.out.println();
+        // }
+
+        // // Enhanced For loop
+        // for(int n[]: nums){
+        //     for(int m: n){
+        //         System.out.print(m + " ");
+        //     }
+        //     System.out.println();
+        // }
+
 
         // Q.1 
         // int num[][] = {{1,2,3,4}, {5,6,7,8}};
@@ -134,7 +160,30 @@ public class array {
         //     System.out.println();
         // }
         
+
+
+        /////// Jagged Array and 3d Array in Java //////
         
+        // int nums[][] = new int[3][];    // Jagged array 
+        // int nums[][][] = new int[3][4][5];    // 3d dimensional array  
+
+        // // nums[0] = new int[3];
+        // // nums[1] = new int[4];
+        // // nums[2] = new int[2];
+        
+
+        // for(int i = 0; i < nums.length;i++){
+        //     for(int j = 0; j < nums[i].length; j++){
+        //         nums[i][j] = (int)(Math.random() * 10);
+        //     }
+        // }
+
+        // for(int n[]: nums){
+        //     for(int m: n){
+        //         System.out.print(m + " ");
+        //     }
+        //     System.out.println();
+        // }
         
     }
 }
