@@ -68,14 +68,56 @@ public class array {
         // int num[][] = {{1,2,3,4,5}, {6,7,8,9,0}};
         // System.out.println(num[0][4]);
 
-        int num[][] = new int[3][4];
-        int random  = (int)Math.random() * 100;
-        for(int i = 0; i < 3;i++){
-            for(int j = 0; j< 4;j++){
-                System.out.print(num[i][j] + " ");
-            }
-            System.out.println();
-        }
+        // int num[][] = {{1,2,3,4}, {5,6,7,8,9}};
+
+        // for(int i = 0; i < num.length;i++){
+        //     for(int j = 0; j< num[i].length;j++){
+        //         System.out.print(num[i][j] + " ");
+        //     }
+        //     System.out.println();
+        // }
+
+
+        // Q.1 
+        // int num[][] = {{1,2,3,4}, {5,6,7,8}};
+        // int num1[][] = {{2,4,6,8},{1,3,5,7}};
+
+        // System.out.println("Matrix 1: ");
+        // for(int i = 0; i < num.length;i++){
+        //     for(int j = 0; j< num[i].length;j++){
+        //         System.out.print(num[i][j] + " ");
+        //     }
+        //     System.out.println();
+        // }
+        // System.out.println("Matrix 2: ");
+        // for(int i = 0; i < num1.length;i++){
+        //     for(int j = 0; j< num1[i].length;j++){
+        //         System.out.print(num1[i][j] + " ");
+        //     }
+        //     System.out.println();
+        // }
+        
+
+        // int result[][] = new int[num.length][num1[0].length];
+
+        // for(int i = 0; i < num.length;i++){
+        //     for(int j = 0; j< num1[0].length;j++){
+        //             result[i][j] += num[i][j] * num1[i][j];
+        //     }
+        // }
+
+        // System.out.println("Multiplication Result: ");
+
+        // for(int i = 0; i < result.length;i++){
+        //     for(int j = 0; j< result[0].length;j++){
+        //         System.out.print(result[i][j] + " ");
+        //     }
+        //     System.out.println();
+        // }
+
+        
+
+        
     }
 }
 
