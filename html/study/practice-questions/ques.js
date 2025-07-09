@@ -436,8 +436,17 @@
 // };
 
 
-async function sleep(millis) {
-    return new Promise(function(resolve)  {
-        setTimeout(resolve, millis);
-    });
-}
+// async function sleep(millis) {
+//     return new Promise(function(resolve)  {
+//         setTimeout(resolve, millis);
+//     });
+// }
+
+
+var createCounter = function(n) {
+    let count = -1; 
+    return function counter() {
+      count++;
+      return n + count;
+    };
+};
