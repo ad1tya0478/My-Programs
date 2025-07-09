@@ -247,7 +247,7 @@ public class array {
 ///////// Strings ////////
 
         // String name = new String("Aditya");
-        String name = "Aditya";
+        // String name = "Aditya";
 
         // System.out.println(name);
         // System.out.println("Hello " + name);
@@ -255,11 +255,15 @@ public class array {
         // System.out.println(name.charAt(1));
         // System.out.println(name.concat(" Sharma"));
 
-        name = name + " Sharma";
-        System.out.println("Hello " + name);
+        // name = name + " Sharma";
+        // System.out.println("Hello " + name);
 
-        StringBuffer sb = new StringBuffer();
+        StringBuffer sb = new StringBuffer("Aditya");
         System.out.println(sb.capacity());
+        System.out.println(sb.length());
+        sb.append(" Sharma");
+        System.out.println(sb);
+        System.out.println(sb.length());
 
     }
 }
