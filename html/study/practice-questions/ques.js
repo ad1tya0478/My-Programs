@@ -443,10 +443,15 @@
 // }
 
 
-var createCounter = function(n) {
-    let count = -1; 
-    return function counter() {
-      count++;
-      return n + count;
-    };
+// var createCounter = function(n) {
+//     let count = -1; 
+//     return function counter() {
+//       count++;
+//       return n + count;
+//     };
+// };
+
+
+var addBinary = function(a, b) {
+    return (BigInt("0b" + a) + BigInt("0b" + b)).toString(2);
 };
