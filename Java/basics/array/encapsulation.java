@@ -26,9 +26,20 @@
 
 
 /////// .this() ///// -- points to the current object, the one that called the method 
+
+/// Constructor — a special method used to initialize objects in Java.
+//                It's called automatically when you use new. Never returns anything
+//                will have the same name as the class name
+
 class Human {
-    private int age = 11;
-    private String name = "Aditya";
+    private int age;
+    private String name;
+
+    // constuctor 
+    public Human(){
+        age = 12;
+        name = "Adi";
+    }
 
     public int getage(){
         return age;
@@ -47,10 +58,14 @@ public class encapsulation {
     public static void main(String a[]){
 
         Human obj = new Human();
+        Human obj1 = new Human();
+        System.out.println(obj.getname() + " : " + obj.getage());
+
+
         obj.setAge(90);
         obj.setName("Aditya"); 
 
-        System.out.println(obj.getname() + " : " + obj.getage());
+        // System.out.println(obj.getname() + " : " + obj.getage());
 
     }
 }
