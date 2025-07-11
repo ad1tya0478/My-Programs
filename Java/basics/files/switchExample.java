@@ -1,4 +1,3 @@
-package files;
 public class switchExample {
     public static void main(String a[]) {
         // int n = 1;

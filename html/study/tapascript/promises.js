@@ -66,83 +66,83 @@ let getUser = new Promise(function(resolve, reject){
     };
     resolve(user)
 })
-// getUser.then( (user) => {
-//     console.log(`Got user ${user.name}`);
+getUser.then( (user) => {
+    console.log(`Got user ${user.name}`);
 
-//     return new Promise(function(resolve, reject){
-//         setTimeout(() => {
-//             resolve('Banglore');
-//         }, 2000)
-//     })
-// })
-// .then((address) => {
-//     console.log(`User address is ${address}`);
-// })
+    return new Promise(function(resolve, reject){
+        setTimeout(() => {
+            resolve('Banglore');
+        }, 2000)
+    })
+})
+.then((address) => {
+    console.log(`User address is ${address}`);
+})
 
 
 // Return a simple value from the .then() handler
-// getUser.then( (user) => {
+getUser.then( (user) => {
 
-//     console.log(`Got user ${user.name}`);
-//     return user.email;
-// })    
-// .then(function(email)  {
-//     console.log(`user email is ${email}`);
-// })
+    console.log(`Got user ${user.name}`);
+    return user.email;
+})    
+.then(function(email)  {
+    console.log(`user email is ${email}`);
+})
 
 
 //  Throw an error from the .then() handler 
-// getUser.then((user) => {
-//     console.log(`Got user ${user.name}`);
+getUser.then((user) => {
+    console.log(`Got user ${user.name}`);
 
-//     if(!user.permissions.includes("hr")){
-//         throw new Error("You are not allowed to access the HR module");
-//     }
+    if(!user.permissions.includes("hr")){
+        throw new Error("You are not allowed to access the HR module");
+    }
 
-//     return user.email;
-// })
-// .then((email) => {
-//     console.log(`user email is ${email}`);
-// })
-// .catch((error) => {
-//     console.error(error);
-// });
+    return user.email;
+})
+.then((email) => {
+    console.log(`user email is ${email}`);
+})
+.catch((error) => {
+    console.error(error);
+});
 
 
 // RULE NO. 3: You can throw the .catch() handler to handle the error 
 //             later. In this case, the control will go to the next closest .catch() handler.
 
-// let promise404 = new Promise(function(resolve, reject){
-//     reject(401)
-// });
-// promise404.catch((error) => {
-//     console.log(error);
-//     if(error === 401){
-//         console.log("Rethrowing 401");
-//         throw error;
-//     } else {
-//         console.log("didn't rethrow"); 
-//     }
-// })
-// .then((result) => {
-//     console.log(result);
-// })
-// .catch((error) => {
-//     console.log(`Handling ${error} here`);
-// })
+let promise404 = new Promise(function(resolve, reject){
+    reject(401)
+});
+promise404.catch((error) => {
+    console.log(error);
+    if(error === 401){
+        console.log("Rethrowing 401");
+        throw error;
+    } else {
+        console.log("didn't rethrow"); 
+    }
+})
+.then((result) => {
+    console.log(result);
+})
+.catch((error) => {
+    console.log(`Handling ${error} here`);
+})
 
 
 /// RULE NO. 4: Unlike .then() and .catch(), the finally() handler doesn't process the result value or error. 
 //              It just passes the result as is to the next handler.
 
-// let promisefinally = new Promise(function(resolve, reject){
-//     resolve('testing finally');
-// })
-// promisefinally.finally(() => {
-//     console.log("Running Finally");
-// }).then((result) => {
-//     console.log(result);
-// })
+let promisefinally = new Promise(function(resolve, reject){
+    resolve('testing finally');
+})
+promisefinally.finally(() => {
+    console.log("Running Finally");
+}).then((result) => {
+    console.log(result);
+})
 
 
 /// RULE NO.5: Calling the .then() handler method multiple times on a single promise is NOT chaining.
@@ -172,41 +172,41 @@ let promise2 = getPromise(RATICATE_POKEMONS_URL);
 let promise3 = getPromise(KAKUNA_POKEMONS_URL);
 
 
-// Promise.all([promise1, promise2, promise3])
-// .then((result) => {
-//     console.log(result);
-// })
-// .catch((error) => {
-//     console.error(error);
-// })
+Promise.all([promise1, promise2, promise3])
+.then((result) => {
+    console.log(result);
+})
+.catch((error) => {
+    console.error(error);
+})
 
-// Promise.any([promise1, promise2, promise3])
-// .then((result) => {
-//     console.log(result);
-// })
-// .catch((error) => {
-//     console.error(error);
-// })
+Promise.any([promise1, promise2, promise3])
+.then((result) => {
+    console.log(result);
+})
+.catch((error) => {
+    console.error(error);
+})
 
 
 
 /// Settling a Promise = Fulfilling(resolve) + rejecting
 
-// Promise.allSettled([promise1, promise2, promise3])
-// .then((result) => {
-//     console.log(result);
-// })
-// .catch((error) => {
-//     console.error(error);
-// })
+Promise.allSettled([promise1, promise2, promise3])
+.then((result) => {
+    console.log(result);
+})
+.catch((error) => {
+    console.error(error);
+})
 
 
-// Promise.race([promise1, promise2, promise3])
-// .then((result) => {
-//     console.log(result);
-// }).catch(error => {
-//     console.log('An error occured');
-// })
+Promise.race([promise1, promise2, promise3])
+.then((result) => {
+    console.log(result);
+}).catch(error => {
+    console.log('An error occured');
+})
 
 
 // Promise.resolve() is same as 
