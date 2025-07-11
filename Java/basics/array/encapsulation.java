@@ -69,7 +69,7 @@ public class encapsulation {
 
         Human obj = new Human();
         Human obj1 = new Human(18,"AdiS");
-        Human obj3 = new Human("AdiS");
+        //Human obj3 = new Human("AdiS");
         System.out.println(obj.getname() + " : " + obj.getage());
         System.out.println(obj1.getname() + " : " + obj1.getage());
 
