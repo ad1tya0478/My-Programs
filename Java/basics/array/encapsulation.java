@@ -41,6 +41,16 @@ class Human {
         name = "Adi";
     }
 
+    public Human(String name) {
+        this.name = name;
+    }
+
+    // Parameterized constructor 
+    public Human(int a, String n) {
+        age = a;
+        name = n;
+    }
+
     public int getage(){
         return age;
     }
@@ -58,8 +68,10 @@ public class encapsulation {
     public static void main(String a[]){
 
         Human obj = new Human();
-        Human obj1 = new Human();
+        Human obj1 = new Human(18,"AdiS");
+        Human obj3 = new Human("AdiS");
         System.out.println(obj.getname() + " : " + obj.getage());
+        System.out.println(obj1.getname() + " : " + obj1.getage());
 
 
         obj.setAge(90);
