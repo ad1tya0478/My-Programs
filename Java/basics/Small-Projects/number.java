@@ -55,11 +55,11 @@ public class number {
             }
 
             if(!rightGuess){
-                System.out.println("Game over, brain-dead son of a bitch.");
+                System.out.println("\nGame over, brain-dead son of a bitch.");
                 System.out.println("The Number was: " + secretNum);
             }
 
-            System.out.print("Wanna Play again Empty Skull..?? (yes/no): ");
+            System.out.print("\nWanna Play again Empty Skull..?? (yes/no): ");
             scanner.nextLine();
             String response = scanner.nextLine().trim().toLowerCase();
             play = response.equals("yes") || response.equals("y");
