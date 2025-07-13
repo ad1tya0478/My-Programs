@@ -65,7 +65,7 @@ image.hasAttribute("height"); // False
 */
 
 
-
+/*
 // Traversing/Navgating DOM //
 
 // ParentElement and // parentNode
@@ -81,4 +81,14 @@ console.log("Child Node: ", main.childNodes);
 
 console.log("First Child ", main.firstChild);
 console.log("First Child Element ", main.firstElementChild);
+*/
 
+/*
+// Manipulating Styles //
+const p = document.getElementById("p-id");
+console.log(p.style);
+p.style.backgroundColor = "pink";
+*/
+
+// Manipulating Classes //
+const mainDiv = document.getElementById("main-id");
