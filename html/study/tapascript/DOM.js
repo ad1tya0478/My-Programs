@@ -65,5 +65,20 @@ image.hasAttribute("height"); // False
 */
 
 
+
 // Traversing/Navgating DOM //
+
+// ParentElement and // parentNode
+const span = document.getElementById("text");
+console.log("Parent Element: ", span.parentElement); // ParentElement - Returns the parent if it's an element, use it when you only care about HTML Elements.
+console.log("Parent Node: ", span.parentNode);  // parentNode - Returns any parent, element or not, use it when you might deal with non-elements too.
+
+// Children and childNodes 
+const main = document.getElementById("main-id");
+
+console.log("children: ", main.children);
+console.log("Child Node: ", main.childNodes);
+
+console.log("First Child ", main.firstChild);
+console.log("First Child Element ", main.firstElementChild);
 
