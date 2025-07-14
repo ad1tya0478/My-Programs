@@ -90,5 +90,42 @@ console.log(p.style);
 p.style.backgroundColor = "pink";
 */
 
+/*
 // Manipulating Classes //
 const mainDiv = document.getElementById("main-id");
+ console.log(mainDiv.className);
+
+ mainDiv.className = "secondary-class";
+ console.log(mainDiv.className);
+
+
+console.log(mainDiv.classList);
+
+mainDiv.classList.add("test");  // Add - Adds a class if it's not already here.
+
+mainDiv.classList.remove("layout"); // Remove - Removes the class
+ 
+mainDiv.classList.replace("main-class", "secondary-class");  // Replace - Swaps one class for another
+
+console.log("Does it have test?", mainDiv.classList.contains("test"));  // Contains - Checks if the element has that class, return true or false
+
+console.log("Does it have test?", mainDiv.classList.contains("main-class"));
+
+mainDiv.classList.toggle("test");  // Toggle - Adds if it is missing, removes it if present.
+*/
+
+/*
+// Controlling Visibilities // 
+const mainDiv = document.getElementById("main-id");
+mainDiv.style.display = "block";
+
+mainDiv.style.visibility = "hidden";  // Visibilty - Element is hidden but still takes place, with this we can change the visibility of the object
+
+mainDiv.style.opacity = "1";   // Opacity - Element is fully transparent, still there and clickable. Takes space and responds to events unless blocked.
+*/
+
+
+
+
+
+
