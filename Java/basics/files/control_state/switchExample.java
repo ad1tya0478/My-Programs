@@ -1,3 +1,5 @@
+package control_state;       // Package files - a package in java is a namespace that groups related classes
+//                              and interfaces together.
 public class switchExample {
     public static void main(String a[]) {
         // int n = 1;

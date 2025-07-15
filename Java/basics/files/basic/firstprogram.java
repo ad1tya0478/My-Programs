@@ -1,3 +1,4 @@
+package basic;
 public class firstprogram {
     public static void main(String a[]) {
 
