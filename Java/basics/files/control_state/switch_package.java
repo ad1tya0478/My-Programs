@@ -1,6 +1,12 @@
 package control_state;       // Package files - a package in java is a namespace that groups related classes
 //                              and interfaces together.
-public class switchExample {
+//                    import tools.calc; = By using this command we can access a class from a different file, first we use the key word import and then the folder name and then class name 
+//    Whichever in-built class you use, belongs to a package 
+//     to import all the files we can use - import java.lang.*; - by using this star we can import all files
+
+
+
+public class switch_package {
     public static void main(String a[]) {
         // int n = 1;
 
