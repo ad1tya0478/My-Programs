@@ -20,6 +20,26 @@ promise.then((x) => console.log(x));
 async function fool(){
     return Promise.resolve(101);
 }
-fool().then(function(result) {
+
+// instead of doing this //
+// fool().then(function(result) {
+//     console.log(result);
+// });
+
+// you can do this - we can you use await because it will also print only the result that we were doing with .then, so intead of using 
+// .then() all the time you can use await to get the result. so to use it just use the await, in front of the async funation, to get the result(resolve)
+
+// const result = await fool();
+// console.log(result);
+
+// we cannot use await outside of a async function, so in the upper case you can put the await into another async function to execute 
+// in simple words you cannot use await function globally 
+// if we don't put it correctly, it will give a syntax error in the console
+
+async function tackle() {
+    const result = await fool();
     console.log(result);
-});
+}
+console.log(tackle());  // now it will give you a promise with pending and undefined value, because you are logging a promise not the result of it 
+//                         because tackle() is async, it reutnrs a promise not the result
+
