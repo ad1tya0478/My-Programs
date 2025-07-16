@@ -266,7 +266,6 @@ public class array {
         System.out.println(sb.length());
 
 
-        
     }
 }
 
