@@ -56,19 +56,68 @@
 
 // Error handling //
 
-const error = new Promise((resolve, reject) => {
-    reject("error occured");
-})
+// const error = new Promise((resolve, reject) => {
+//     reject("error occured");
+// })
 // error.catch((error) => console.log(error));
 
-async function handleError() {
-    try {
-        await error;
-    }
-    catch(error){
-        console.error(error);
-    }
-}
+// async function handleError() {
+//     try {
+//         await error;
+//     }
+//     catch(error){
+//         console.error(error);
+//     }
+// }
 
-handleError();
+// handleError();
+
+
+
+// IIFE - Immediately Invoked Function Expression //
+// An IIFE is a function that is defined and executed instatntly, not like it will outrun all the code, it will run where it's placed, waiting for this 
+// turn, and then it runs, immediatley when the interpreter reaches it
+
+// Good for one time setups 
+// A variable created inside this, cannot be touched outside 
+// Before import/export. iife was used to stimulate modules 
+
+// (function () {
+//     console.log("Executed Instantly");
+// }());
+
+
+// Handling Multiple async/await // 
+
+const BULBASAUR_POKEMONS_URL = 'https://pokeapi.co/api/v2/pokemon/bulbasaur';
+const RATICATE_POKEMONS_URL = 'https://pokeapi.co/api/v2/pokemon/raticate';
+const KAKUNA_POKEMONS_URL = 'https://pokeapi.co/api/v2/pokemon/kakuna';
+
+// async function resolvepoke(){
+// const responses = Promise.allSettled([  // allsettled - When all promises in a list have finished, no matter if they were, fulfilled(success) or rejected(failed)
+//     fetch(BULBASAUR_POKEMONS_URL),
+//     fetch(RATICATE_POKEMONS_URL),
+//     fetch(KAKUNA_POKEMONS_URL)
+// ]);
+//     const p = await responses;
+//     // console.log(p);
+
+//     const pk_1 = await p[0]?.value.jason();
+//     console.log(pk_1);
+// }
+// resolvepoke();
+
+
+
+async function resolvepokeV2(){
+const responses = await Promise.allSettled([  // allsettled - When all promises in a list have finished, no matter if they were, fulfilled(success) or rejected(failed)
+    
+    fetch(BULBASAUR_POKEMONS_URL).then(response => response.json()),
+    fetch(RATICATE_POKEMONS_URL).then(response => response.json()),
+    fetch(KAKUNA_POKEMONS_URL).then(response => response.json())
+]);
+    console.log(responses);
+}
+resolvepokeV2();
+
 
