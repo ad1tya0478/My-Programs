@@ -16,13 +16,56 @@
 //     }
 // }
 
-final class calc {
-    public final void show(){
-        System.out.println("in calc Show");
+// final class calc {
+//     public final void show(){
+//         System.out.println("in calc Show");
+//     }
+//     public void add(int a, int b){
+//         System.out.println(a+b);
+//     }
+// }
+
+
+// Object Class equals tostring hashcode in java
+class Laptop {
+    int price;
+    String model;
+
+    @Override
+    public String toString() {
+        return "Laptop [price=" + price + ", model=" + model + "]";
     }
-    public void add(int a, int b){
-        System.out.println(a+b);
+
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + price;
+        result = prime * result + ((model == null) ? 0 : model.hashCode());
+        return result;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Laptop other = (Laptop) obj;
+        if (price != other.price)
+            return false;
+        if (model == null) {
+            if (other.model != null)
+                return false;
+        } else if (!model.equals(other.model))
+            return false;
+        return true;
+    }
+
+    
+
 }
 
 
@@ -57,9 +100,34 @@ public class polymorphism {
         // final int num = 8;
         // System.out.println(num);
 
-        calc obj = new calc();
-        obj.show();
-        obj.add(4,10);
 
+        // calc obj = new calc();
+        // obj.show();
+        // obj.add(4,10);
+
+
+        // if we execute this part, java by default, it calls tostring() from object class and that returns garbage value
+        // tostring() is a method in java used to return a string representation of an object
+        // Every class in java inherits it from the object class, we use this method to decribe the object in a readable format. you override it to return object's details as a string 
+
+        // Laptop obj = new Laptop();
+        // obj.model = "HP Victus";
+        // obj.price = 60000;
+        // System.out.println(obj);
+
+        // if you want proper output, overRide tostring() in laptop class
+        Laptop obj = new Laptop();
+        obj.model = "HP Victus";
+        obj.price = 60000;
+
+
+        Laptop obj1 = new Laptop();
+        obj1.model = "HP Victus";
+        obj1.price = 60000;
+
+        boolean result = obj.equals(obj1);
+
+        System.out.println(result);
+        
     }
 }

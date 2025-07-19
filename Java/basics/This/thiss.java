@@ -28,7 +28,7 @@ class B extends A {
 }
 public class thiss {
     public static void main(String a[]){
-        B obj = new B(5);   // Whenever you Create the object it wil call the constructor of the class.
+        // B obj = new B(5);   // Whenever you Create the object it wil call the constructor of the class.
     }
 }
 
