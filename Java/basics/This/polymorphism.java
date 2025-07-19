@@ -63,9 +63,6 @@ class Laptop {
             return false;
         return true;
     }
-
-    
-
 }
 
 
