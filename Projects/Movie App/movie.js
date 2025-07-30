@@ -25,16 +25,40 @@ const searchBtn = document.getElementById("search-button");
 
                     const frame = document.createElement("div");
                     frame.className = "frame";
+
+                    const tomatoRating = Math.floor(Math.random() * 50) + 50; 
+
                     frame.innerHTML = `
                     <img src="${details.Poster !== "N/A" ? details.Poster : 'https://via.placeholder.com/200'}" />
                     <h3>${details.Title}</h3>
                     <p><strong>Year:</strong> ${details.Year}</p>
                     <p><strong>Genre:</strong> ${details.Genre}</p>
-                    <p><strong>IMDB:</strong> ${details.imdbRating}</p>
+                    <p><strong>IMDB:</strong> <span id="tomato-${details.imdbID}">${tomatoRating}</span>% 🍿</p>
+
                     <p>${details.Plot.slice(0, 100)}...</p>
+                    <div class ="user-rate">
+                        <button class="rate-btn" data-id="${details.imdbID}"> 🍿 Pop </button>
+                        <span id="user-rate-${details.imdbID}"> </span>
+                    </div>
                     `;
 
+                    const userRating = localStorage.getItem(`rating-${details.imdbID}`);
+                        if (userRating) {
+                        frame.querySelector(`#user-rate-${details.imdbID}`).textContent = `You: ${userRating} 🍿`;
+                        }
+
+
                     Results.appendChild(frame);
+
+                    const rateBtn = frame.querySelector(".rate-btn");
+                        rateBtn.addEventListener("click", () => {
+                        const ratingSpan = document.getElementById(`tomato-${details.imdbID}`);
+                        let current = parseInt(ratingSpan.textContent);
+                        if (current < 100) current += 1;
+                        ratingSpan.textContent = current;
+                        });
+
+
 
                 });
             } else {

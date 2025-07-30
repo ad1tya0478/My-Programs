@@ -127,3 +127,33 @@
             font-size: 0.9rem;
             color: #ccc;
         }
+
+
+        .rate-btn {
+            background-color: #00e6ff;
+            color: #000;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 0.5rem;
+            transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+            width: 100%;
+            text-align: center;
+            font-family: 'Segoe UI Emoji', 'Segoe UI', sans-serif;
+        }
+
+        .rate-btn:hover {
+            background-color: #00b8d4;
+            transform: scale(1.05);
+            box-shadow: 0 0 8px rgba(0, 255, 255, 0.5);
+        }
+
+        .user-rate {
+            margin-top: 0.5rem;
+            text-align: center;
+            color: #ffcc00;
+            font-size: 0.9rem;
+        }
