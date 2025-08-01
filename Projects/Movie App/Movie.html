@@ -8,15 +8,34 @@
     <link rel="stylesheet" href="movie.css">
 </head>
 <body>
+
+        <nav class="navbar">
+    <div class="nav-left">
+        <div class="logo">🎬 <span style="color:#f5c518;">FilmFinder</span></div>
+        <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Trending</a></li>
+        <li><a href="#">Genres</a></li>
+        <li><a href="#">Watchlist</a></li>
+        </ul>
+    </div>
+
+    <div class="nav-right">
+        <div class="nav-search">
+        <input type="text" id="search" placeholder="Search Movie Name">
+        <button id="search-button">&#128269;</button>
+        </div>
+        <button class="nav-btn">Sign In</button>
+    </div>
+    </nav>
+
+
+
     <div class="container">
         <h1>Film Finder</h1>
         <h2>
             Quick Access to Movies & Ratings
              </h2>
-        <div class="search-container">
-        <input type="text" id="search" placeholder="Search Movie Name">
-        <button id="search-button"> &#128269; </button>
-        </div>
         <div id="results"></div>
     </div>
 

@@ -42,10 +42,10 @@ const searchBtn = document.getElementById("search-button");
                     </div>
                     `;
 
-                    const userRating = localStorage.getItem(`rating-${details.imdbID}`);
-                        if (userRating) {
-                        frame.querySelector(`#user-rate-${details.imdbID}`).textContent = `You: ${userRating} 🍿`;
-                        }
+                    // const userRating = localStorage.getItem(`rating-${details.imdbID}`);
+                    //     if (userRating) {
+                    //     frame.querySelector(`#user-rate-${details.imdbID}`).textContent = `You: ${userRating} 🍿`;
+                    //     }
 
 
                     Results.appendChild(frame);
